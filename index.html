@@ -12,33 +12,38 @@
   />
 
   <style>
-    /* HEADER: imagen de fondo con menos padding */
+    /* HEADER: imagen de fondo de max 500x500 en la esquina superior derecha */
     .header-hero {
-      background: url("https://github.com/NLahorcaKatzow/portfolio/blob/main/Resources/6227db8a-c3b2-4a97-b1b6-f60d36823e3e.png") no-repeat top/right;
-      padding: 60px 0; /* Ajusta según tu preferencia */
-      color: #fff;     /* Texto en blanco */
+      /* El color de fondo que desees. Si no quieres color, puedes eliminarlo. */
+      background-color: #222;  
+      background-image: url("https://github.com/NLahorcaKatzow/portfolio/blob/main/Resources/6227db8a-c3b2-4a97-b1b6-f60d36823e3e.png?raw=true");
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 500px 500px; /* La imagen no excede 500x500 */
+      padding: 60px 1rem; /* Ajusta el padding para tu contenido */
+      color: #fff;        /* Texto en blanco si tienes un fondo oscuro */
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      position: relative;
     }
 
-    /* Título y subtítulo más pequeños */
     .header-hero .title {
-      font-size: 2rem; /* Ajusta el tamaño de fuente */
+      font-size: 2rem;
       margin-bottom: 0.5rem;
     }
     .header-hero .subtitle {
       font-size: 1.2rem;
     }
 
-    /* MAIN: reducir los márgenes y usar un contenedor de ancho moderado */
+    /* MAIN: reducir márgenes y usar un contenedor no demasiado ancho */
     main.container-lg {
-      max-width: 900px; /* Ajusta el ancho máximo de tu contenido */
+      max-width: 900px;
     }
     .my-4 {
       margin-top: 1.5rem !important;
       margin-bottom: 1.5rem !important;
     }
 
-    /* CARDS: menos padding y sin alturas fijas */
+    /* CARDS: menos padding, sin altura fija */
     .Box.p-3 {
       padding: 1rem !important;
       margin-bottom: 1rem;
@@ -51,11 +56,15 @@
     }
   </style>
 </head>
+
 <body class="bg-gray-light text-gray-dark">
   <!-- HEADER -->
-  <header class="header-hero text-center">
-    <h1 class="title">Elías</h1>
-    <p class="subtitle">Desarrollador Unity SSR</p>
+  <header class="header-hero">
+    <!-- Tu contenido va a la izquierda (por ejemplo) -->
+    <div>
+      <h1 class="title">Elías</h1>
+      <p class="subtitle">Desarrollador Unity SSR</p>
+    </div>
   </header>
 
   <!-- MAIN -->
