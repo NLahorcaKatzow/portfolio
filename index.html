@@ -3,35 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi Portfolio - Elías</title>
-  <link rel="stylesheet" href="https://unpkg.com/@primer/css@20.2.4/dist/primer.css" />
+  <title>Portfolio - Elías</title>
+
+  <!-- Import de Primer CSS (versión específica en unpkg) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@primer/css@20.2.4/dist/primer.css"
+  />
+
+  <style>
+    /* Ejemplo de estilos adicionales para tu header */
+    .header-hero {
+      background: url("https://via.placeholder.com/1500x500") no-repeat center/cover;
+      padding: 100px 0; /* Ajusta el alto que quieras para tu header */
+      color: #fff;      /* Texto en blanco */
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar texto */
+    }
+  </style>
 </head>
-<body class="p-5 bg-gray-light text-center">
-  <div class="container-lg">
-    <h1 class="f00 mb-4">Hola, soy Elías</h1>
+<body class="bg-gray-light text-gray-dark">
 
-    <div class="Box mb-4">
-      <div class="Box-header">
-        <h2 class="Box-title">Sobre mí</h2>
+  <!-- HEADER -->
+  <header class="header-hero text-center">
+    <h1 class="h0">Elías</h1>
+    <p class="f2">Desarrollador Unity SSR</p>
+  </header>
+
+  <!-- MAIN BODY -->
+  <main class="container-lg my-4">
+    <!-- Cuadrícula vertical de 6 Cards -->
+    <div class="d-flex flex-column grid-gap-3">
+      <!-- Card 1 -->
+      <div class="Box p-3" style="height: 200px;">
+        <h3 class="f3 text-bold">Proyecto 1</h3>
+        <p>Descripción breve de tu proyecto</p>
       </div>
-      <div class="Box-body">
-        <p>Estudiante de Ingeniería Electrónica apasionado por la tecnología, los sistemas y la electrónica.</p>
+
+      <!-- Card 2 -->
+      <div class="Box p-3" style="height: 300px;">
+        <h3 class="f3 text-bold">Proyecto 2</h3>
+        <p>Descripción breve de tu proyecto</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="Box p-3" style="height: 150px;">
+        <h3 class="f3 text-bold">Proyecto 3</h3>
+        <p>Descripción breve de tu proyecto</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="Box p-3" style="height: 250px;">
+        <h3 class="f3 text-bold">Proyecto 4</h3>
+        <p>Descripción breve de tu proyecto</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="Box p-3" style="height: 320px;">
+        <h3 class="f3 text-bold">Proyecto 5</h3>
+        <p>Descripción breve de tu proyecto</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="Box p-3" style="height: 180px;">
+        <h3 class="f3 text-bold">Proyecto 6</h3>
+        <p>Descripción breve de tu proyecto</p>
       </div>
     </div>
+  </main>
 
-    <div class="Box mb-4">
-      <div class="Box-header">
-        <h2 class="Box-title">Proyectos</h2>
-      </div>
-      <div class="Box-body text-left">
-        <ul>
-          <li>Simulación de señales</li>
-          <li>Control de motores con Arduino</li>
-        </ul>
-      </div>
-    </div>
-
-    <a class="btn btn-primary" href="mailto:elias@example.com">Contáctame</a>
-  </div>
+  <!-- FOOTER -->
+  <footer class="border-top mt-4 py-4 text-center">
+    <p class="mb-2">Disclaimer: Este sitio es solo a modo de ejemplo.</p>
+    <p class="mb-0">
+      <a class="btn btn-primary" href="mailto:elias@example.com">Contact me</a>
+    </p>
+  </footer>
 </body>
 </html>
