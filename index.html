@@ -4,37 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mi Portfolio - Elías</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      color: #007acc;
-    }
-    .section {
-      margin-bottom: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="https://unpkg.com/@primer/css@20.2.4/dist/primer.css" />
 </head>
-<body>
-  <h1>Hola, soy Elías</h1>
-  <div class="section">
-    <h2>Sobre mí</h2>
-    <p>Estudiante de Ingeniería Electrónica apasionado por la tecnología, los sistemas y la electrónica.</p>
-  </div>
-  <div class="section">
-    <h2>Proyectos</h2>
-    <ul>
-      <li>Proyecto 1: Simulación de señales</li>
-      <li>Proyecto 2: Control de motores con Arduino</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>Contacto</h2>
-    <p>Email: elias@example.com</p>
+<body class="p-5 bg-gray-light text-center">
+  <div class="container-lg">
+    <h1 class="f00 mb-4">Hola, soy Elías</h1>
+
+    <div class="Box mb-4">
+      <div class="Box-header">
+        <h2 class="Box-title">Sobre mí</h2>
+      </div>
+      <div class="Box-body">
+        <p>Estudiante de Ingeniería Electrónica apasionado por la tecnología, los sistemas y la electrónica.</p>
+      </div>
+    </div>
+
+    <div class="Box mb-4">
+      <div class="Box-header">
+        <h2 class="Box-title">Proyectos</h2>
+      </div>
+      <div class="Box-body text-left">
+        <ul>
+          <li>Simulación de señales</li>
+          <li>Control de motores con Arduino</li>
+        </ul>
+      </div>
+    </div>
+
+    <a class="btn btn-primary" href="mailto:elias@example.com">Contáctame</a>
   </div>
 </body>
 </html>
