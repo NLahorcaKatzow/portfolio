@@ -12,29 +12,36 @@
   />
 
   <style>
-    /* HEADER: imagen de fondo de max 500x500 en la esquina superior derecha */
+    /* HEADER: imagen 500x500 en la esquina superior derecha + contenido centrado */
     .header-hero {
-      /* El color de fondo que desees. Si no quieres color, puedes eliminarlo. */
+      width: 100%;
+      height: 500px; /* Para que el header tenga el espacio de 500px de alto */
       background-color: #222;  
-      background-image: url("https://github.com/NLahorcaKatzow/portfolio/blob/main/Resources/6227db8a-c3b2-4a97-b1b6-f60d36823e3e.png?raw=true");
+      background-image: url("https://via.placeholder.com/600x600?text=Tu+Imagen");
       background-repeat: no-repeat;
-      background-position: top right;
-      background-size: 500px 500px; /* La imagen no excede 500x500 */
-      padding: 60px 1rem; /* Ajusta el padding para tu contenido */
-      color: #fff;        /* Texto en blanco si tienes un fondo oscuro */
+      background-position: top right; 
+      background-size: 500px 500px; /* La imagen se fuerza a 500x500 px */
+      
+      /* Centrar vertical y horizontalmente el contenido (nombre y subtítulo) */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      color: #fff;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-      position: relative;
     }
 
     .header-hero .title {
       font-size: 2rem;
       margin-bottom: 0.5rem;
     }
+
     .header-hero .subtitle {
       font-size: 1.2rem;
     }
 
-    /* MAIN: reducir márgenes y usar un contenedor no demasiado ancho */
+    /* MAIN: márgenes y contenedor */
     main.container-lg {
       max-width: 900px;
     }
@@ -60,11 +67,9 @@
 <body class="bg-gray-light text-gray-dark">
   <!-- HEADER -->
   <header class="header-hero">
-    <!-- Tu contenido va a la izquierda (por ejemplo) -->
-    <div>
-      <h1 class="title">Elías</h1>
-      <p class="subtitle">Desarrollador Unity SSR</p>
-    </div>
+    <!-- Contenido centrado -->
+    <h1 class="title">Elías</h1>
+    <p class="subtitle">Desarrollador Unity SSR</p>
   </header>
 
   <!-- MAIN -->
