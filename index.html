@@ -12,67 +12,95 @@
   />
 
   <style>
-    /* Ejemplo de estilos adicionales para tu header */
+    /* HEADER: imagen de fondo con menos padding */
     .header-hero {
       background: url("https://via.placeholder.com/1500x500") no-repeat center/cover;
-      padding: 100px 0; /* Ajusta el alto que quieras para tu header */
-      color: #fff;      /* Texto en blanco */
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para resaltar texto */
+      padding: 60px 0; /* Ajusta según tu preferencia */
+      color: #fff;     /* Texto en blanco */
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Título y subtítulo más pequeños */
+    .header-hero .title {
+      font-size: 2rem; /* Ajusta el tamaño de fuente */
+      margin-bottom: 0.5rem;
+    }
+    .header-hero .subtitle {
+      font-size: 1.2rem;
+    }
+
+    /* MAIN: reducir los márgenes y usar un contenedor de ancho moderado */
+    main.container-lg {
+      max-width: 900px; /* Ajusta el ancho máximo de tu contenido */
+    }
+    .my-4 {
+      margin-top: 1.5rem !important;
+      margin-bottom: 1.5rem !important;
+    }
+
+    /* CARDS: menos padding y sin alturas fijas */
+    .Box.p-3 {
+      padding: 1rem !important;
+      margin-bottom: 1rem;
+    }
+
+    /* FOOTER: reducir paddings */
+    footer {
+      margin-top: 1.5rem;
+      padding: 1rem 0;
     }
   </style>
 </head>
 <body class="bg-gray-light text-gray-dark">
-
   <!-- HEADER -->
   <header class="header-hero text-center">
-    <h1 class="h0">Elías</h1>
-    <p class="f2">Desarrollador Unity SSR</p>
+    <h1 class="title">Elías</h1>
+    <p class="subtitle">Desarrollador Unity SSR</p>
   </header>
 
-  <!-- MAIN BODY -->
+  <!-- MAIN -->
   <main class="container-lg my-4">
-    <!-- Cuadrícula vertical de 6 Cards -->
-    <div class="d-flex flex-column grid-gap-3">
+    <div class="d-flex flex-column">
       <!-- Card 1 -->
-      <div class="Box p-3" style="height: 200px;">
-        <h3 class="f3 text-bold">Proyecto 1</h3>
-        <p>Descripción breve de tu proyecto</p>
+      <div class="Box p-3">
+        <h3 class="f4 text-bold">Proyecto 1</h3>
+        <p>Descripción breve de tu proyecto.</p>
       </div>
 
       <!-- Card 2 -->
-      <div class="Box p-3" style="height: 300px;">
-        <h3 class="f3 text-bold">Proyecto 2</h3>
-        <p>Descripción breve de tu proyecto</p>
+      <div class="Box p-3">
+        <h3 class="f4 text-bold">Proyecto 2</h3>
+        <p>Descripción breve de tu proyecto.</p>
       </div>
 
       <!-- Card 3 -->
-      <div class="Box p-3" style="height: 150px;">
-        <h3 class="f3 text-bold">Proyecto 3</h3>
-        <p>Descripción breve de tu proyecto</p>
+      <div class="Box p-3">
+        <h3 class="f4 text-bold">Proyecto 3</h3>
+        <p>Descripción breve de tu proyecto.</p>
       </div>
 
       <!-- Card 4 -->
-      <div class="Box p-3" style="height: 250px;">
-        <h3 class="f3 text-bold">Proyecto 4</h3>
-        <p>Descripción breve de tu proyecto</p>
+      <div class="Box p-3">
+        <h3 class="f4 text-bold">Proyecto 4</h3>
+        <p>Descripción breve de tu proyecto.</p>
       </div>
 
       <!-- Card 5 -->
-      <div class="Box p-3" style="height: 320px;">
-        <h3 class="f3 text-bold">Proyecto 5</h3>
-        <p>Descripción breve de tu proyecto</p>
+      <div class="Box p-3">
+        <h3 class="f4 text-bold">Proyecto 5</h3>
+        <p>Descripción breve de tu proyecto.</p>
       </div>
 
       <!-- Card 6 -->
-      <div class="Box p-3" style="height: 180px;">
-        <h3 class="f3 text-bold">Proyecto 6</h3>
-        <p>Descripción breve de tu proyecto</p>
+      <div class="Box p-3">
+        <h3 class="f4 text-bold">Proyecto 6</h3>
+        <p>Descripción breve de tu proyecto.</p>
       </div>
     </div>
   </main>
 
   <!-- FOOTER -->
-  <footer class="border-top mt-4 py-4 text-center">
+  <footer class="border-top text-center">
     <p class="mb-2">Disclaimer: Este sitio es solo a modo de ejemplo.</p>
     <p class="mb-0">
       <a class="btn btn-primary" href="mailto:elias@example.com">Contact me</a>
